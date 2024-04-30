@@ -4,7 +4,6 @@ FROM ubuntu:23.04
 # Set the environment to non-interactive to avoid prompts
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install Python, pip, Conan, libgmock-dev, and mosquitto
 RUN apt-get update && \
     apt upgrade -y && \
     apt-get install -y \
